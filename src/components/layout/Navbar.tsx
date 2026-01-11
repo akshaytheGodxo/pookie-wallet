@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <section className="flex p-6 justify-between bg-zinc-50 dark:bg-black border-b border-zinc-200 dark:border-zinc-800">
             <div>
-                <h2 className="text-3xl font-medium text-primary">Pookie Wallet</h2>
+                <h2 className="text-3xl font-medium text-primary font-sans">Pookie Wallet</h2>
             </div>
             {/* Features section */}
             <div className="self-center ">
@@ -47,7 +47,7 @@ const Navbar = () => {
                     <Button 
                     className="cursor-pointer"
                     size={"lg"}
-                    variant={"secondary"}
+                    variant={"default"}
                     onClick={() => {
                         signOut({redirectUrl: '/signin'});
                     }}
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </Button>) : (<Button
                     className="cursor-pointer"
                     size={"lg"}
-                    variant={"secondary"}
+                    variant={"default"}
                     onClick={() => router.push('/signin')}
                 >
                     Sign In
