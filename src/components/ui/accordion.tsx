@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 interface AccordionContextValue {
   value: string[]
-  onValueChange: (value: string[]) => void
+  onValueChange: (value: string) => void
 }
 
 const AccordionContext = React.createContext<AccordionContextValue | undefined>(
@@ -81,7 +81,7 @@ const Accordion = React.forwardRef<
     )
 
     return (
-      <AccordionContext.Provider value={{ value, onValueChange: toggleItem }}>
+      <AccordionContext.Provider  value={{ value, onValueChange: toggleItem }}>
         <div ref={ref} className={cn("space-y-2", className)} {...props} />
       </AccordionContext.Provider>
     )

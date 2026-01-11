@@ -9,7 +9,7 @@ export function DashboardHeader() {
   const { user } = useUser()
   const router = useRouter()
   // Mock subscription tier - replace with real data later
-  const subscriptionTier = "free" // "free" | "pro" | "premium"
+  const subscriptionTier = "free" as string// "free" | "pro" | "premium"
 
   return (
     <header className="border-b border-border bg-card px-6 py-4">

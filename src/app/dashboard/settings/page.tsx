@@ -10,7 +10,7 @@ import { useUser } from "@clerk/nextjs"
 
 // Mock subscription - replace with real data
 const mockSubscription = {
-  tier: "free" as const,
+  tier: "free",
   expiresAt: null,
 }
 
@@ -174,7 +174,7 @@ export default function SettingsPage() {
                           {mockSubscription.tier === "free"
                             ? "Free forever"
                             : mockSubscription.expiresAt
-                            ? `Expires ${mockSubscription.expiresAt.toLocaleDateString()}`
+                            ? `Expires ${mockSubscription.expiresAt}`
                             : "Active"}
                         </div>
                       </div>
