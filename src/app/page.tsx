@@ -7,6 +7,8 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <div>
@@ -18,6 +20,9 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <Footer />
+
+
+
     </div>
   );
 }

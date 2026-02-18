@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { TrendingUp, TrendingDown, BarChart3 } from "lucide-react"
 import { MOCK_STOCKS } from "@/lib/mock-data"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 // Format currency
 const formatCurrency = (value: number) => {
